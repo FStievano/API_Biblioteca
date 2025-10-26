@@ -1,0 +1,50 @@
+### Cadastrar Autor
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "J.K. Rowling",
+  "birthDate": "1965-07-31",
+  "sex": "Feminino",
+  "writingGenre": "Fantasy"
+}
+
+### Listar Autores
+GET http://localhost:3000/authors
+
+### Cadastrar Usuário
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Carlos Souza",
+  "birthDate": "1990-05-10",
+  "sex": "Masculino",
+  "address": "Rua das Flores, 123"
+}
+
+### Listar Usuários
+GET http://localhost:3000/users
+
+### Cadastrar Livro
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Harry Potter e a Pedra Filosofal",
+  "synopsis": "Um jovem descobre ser um bruxo.",
+  "year": 1997,
+  "author": "68fd8137cb36360ae5dadd47"
+}
+
+### Listar Livros
+GET http://localhost:3000/books
+
+### Realizar Empréstimo
+POST http://localhost:3000/loans
+Content-Type: application/json
+
+{
+  "userId": "68fd82b5168fcd39f60f5318",
+  "bookId": "68fd8431168fcd39f60f5329"
+}
